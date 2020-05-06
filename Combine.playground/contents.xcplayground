@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='1. Introduction'/>
+        <page name='2. Components'/>
+        <page name='3.1 Operators - Transformers'/>
+        <page name='3.2 Operators - Filters'/>
+        <page name='3.3 Operators - Combiners'/>
+        <page name='3.4 Operators - Timers'/>
+        <page name='4. Topics'/>
+        <page name='5. Advance'/>
+    </pages>
+</playground>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Combine_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dpU-ka-lQZ">
+                                <rect key="frame" x="157" y="194" width="100" height="96.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Throttle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOY-de-tE5">
+                                        <rect key="frame" x="8" y="0.0" width="84.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFc-gy-tky">
+                                        <rect key="frame" x="26" y="38" width="48" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-dO-P2y">
+                                        <rect key="frame" x="0.0" y="66.5" width="100" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="UX5-QU-rV7"/>
+                                        </constraints>
+                                        <state key="normal" title="Run"/>
+                                        <connections>
+                                            <action selector="runThrottle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FPp-NI-3cA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="yXp-Dr-pPT"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DW4-FY-UgW">
+                                <rect key="frame" x="151.5" y="390.5" width="111.5" height="96.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debounce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLt-eX-5gd">
+                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EV-8g-pb9">
+                                        <rect key="frame" x="31.5" y="38" width="48" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfg-pb-JdI">
+                                        <rect key="frame" x="5.5" y="66.5" width="100" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="r0P-71-0th"/>
+                                        </constraints>
+                                        <state key="normal" title="Run"/>
+                                        <connections>
+                                            <action selector="runDebounce:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnb-Me-o6x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZN-1i-LRe">
+                                <rect key="frame" x="157" y="587" width="100" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="jBu-HO-XHX"/>
+                                </constraints>
+                                <state key="normal" title="Reset ALL!"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="at4-ny-wxo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DW4-FY-UgW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ODY-qD-OYQ"/>
+                            <constraint firstItem="dpU-ka-lQZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="T5N-LM-jL5"/>
+                            <constraint firstItem="yZN-1i-LRe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Y6G-hP-01j"/>
+                            <constraint firstItem="yZN-1i-LRe" firstAttribute="top" secondItem="DW4-FY-UgW" secondAttribute="bottom" constant="100" id="b6J-11-l1L"/>
+                            <constraint firstItem="dpU-ka-lQZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pwC-ZS-gP4"/>
+                            <constraint firstItem="DW4-FY-UgW" firstAttribute="top" secondItem="dpU-ka-lQZ" secondAttribute="bottom" constant="100" id="z4Y-1Y-aPX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="debounceResultLabel" destination="5EV-8g-pb9" id="pJK-a7-Brn"/>
+                        <outlet property="debounceTitleLabel" destination="tLt-eX-5gd" id="6IF-Nc-Ky7"/>
+                        <outlet property="throttleResultLabel" destination="xFc-gy-tky" id="gyo-fv-cju"/>
+                        <outlet property="throttleTitleLabel" destination="NOY-de-tE5" id="XvM-OS-RJA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
