@@ -3,7 +3,7 @@ import Combine
 
 func futureIncrement(integer: Int, afterDelay delay: TimeInterval) -> Future<Int, Never> {
   Future<Int, Never> { promise in
-    print("Future created and run inmedeatly")
+    print("Future created and run immediately")
     DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
         promise(.success(Int.random(in: 0...integer)))
     }

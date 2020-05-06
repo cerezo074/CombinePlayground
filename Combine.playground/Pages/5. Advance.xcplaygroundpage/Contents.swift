@@ -48,7 +48,7 @@ var subscriptions: Set<AnyCancellable> = []
 
 //runSimplePublisher(attachOn: &subscriptions)
 
-runCustomCreatorPublisher(attachOn: &subscriptions)
+//runCustomCreatorPublisher(attachOn: &subscriptions)
 
 //runCustomTransformerPublisher(attachOn: &subscriptions)
 

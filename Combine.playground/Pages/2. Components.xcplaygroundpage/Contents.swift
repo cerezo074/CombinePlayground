@@ -58,7 +58,7 @@ var subscriptions = Set<AnyCancellable>()
  corresponding activities from occurring, such as network calls.
  */
 
-runCancellable(attachOn: &subscriptions)
+//runCancellable(attachOn: &subscriptions)
 
 /*:
  ## What's going on 🤯
